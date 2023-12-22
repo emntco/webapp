@@ -2,6 +2,16 @@
 
 .header {
   padding: var(--base) 0;
+  position: fixed;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgb(0, 0, 0, 0.75) 0);
+  overflow: hidden;
+  z-index: 2;
+  width: 100%;
+
+  @include mid-break {
+    position: static;
+    padding: var(--base) 0 16px;
+  }
 }
 
 .wrap {
@@ -12,7 +22,7 @@
 }
 
 .logo {
-  width: 150px;
+  width: 250px;
 }
 
 :global([data-theme="light"]) {
