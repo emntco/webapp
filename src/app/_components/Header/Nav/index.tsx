@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { Header as HeaderType, User } from '../../../../payload/payload-types'
@@ -32,8 +33,9 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       {user && <Link href="/account">Account</Link>}
       {!user && (
         <React.Fragment>
-          <Link href="/login">Login</Link>
-          <Link href="/create-account">Create Account</Link>
+          <Link href="/login">
+            <Image src="icons/user.svg" alt="User icon" width={18} height={18} />
+          </Link>
         </React.Fragment>
       )}
     </nav>

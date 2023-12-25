@@ -21,7 +21,7 @@ export const InitTheme: React.FC = () => {
       // }
 
       // return null
-      return dark;
+      return 'dark'
     }
 
     function themeIsValid(theme) {
