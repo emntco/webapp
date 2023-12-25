@@ -12,15 +12,16 @@ export const InitTheme: React.FC = () => {
         __html: `
   (function () {
     function getImplicitPreference() {
-      var mediaQuery = '(prefers-color-scheme: dark)'
-      var mql = window.matchMedia(mediaQuery)
-      var hasImplicitPreference = typeof mql.matches === 'boolean'
+      // var mediaQuery = '(prefers-color-scheme: dark)'
+      // var mql = window.matchMedia(mediaQuery)
+      // var hasImplicitPreference = typeof mql.matches === 'boolean'
 
-      if (hasImplicitPreference) {
-        return mql.matches ? 'dark' : 'light'
-      }
+      // if (hasImplicitPreference) {
+      //   return mql.matches ? 'dark' : 'light'
+      // }
 
-      return null
+      // return null
+      return dark;
     }
 
     function themeIsValid(theme) {

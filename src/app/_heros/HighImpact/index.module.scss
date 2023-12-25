@@ -4,6 +4,7 @@
   position: relative;
   overflow: hidden;
   padding: 0;
+  top: calc(var(--gutter-h)*-1);
 
   @include mid-break {
     margin-top: calc(var(--gutter-h) * -1);
