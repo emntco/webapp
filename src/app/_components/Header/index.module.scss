@@ -9,7 +9,7 @@
   z-index: 1;
 
   @include mid-break {
-    padding: var(--base) 0 16px;
+    padding: var(--base) 0;
   }
 }
 

@@ -2,15 +2,14 @@
 
 .hero {
   position: relative;
-  overflow: hidden;
   padding: 0;
-  top: calc(var(--gutter-h)*-1);
 }
 
 .media {
   position: relative;
   width: calc(100% + var(--gutter-h));
   left: calc(var(--gutter-h) / -2);
+  top: calc(var(--gutter-h)*-1);
 
   img {
     pointer-events: none;
@@ -18,7 +17,7 @@
 
   @include mid-break {
     left: 0;
-    margin-top: var(--base);
+    top: 0;
     margin-left: calc(var(--gutter-h) * -1);
     width: calc(100% + var(--gutter-h) * 2);
   }
