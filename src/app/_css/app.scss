@@ -51,13 +51,17 @@ body {
 }
 
 ::selection {
-  background: var(--theme-success-500);
-  color: var(--color-base-800);
+  // background: var(--theme-success-500);
+  // color: var(--color-base-800);
+  background-color: white;
+  color: black;
 }
 
 ::-moz-selection {
-  background: var(--theme-success-500);
-  color: var(--color-base-800);
+  // background: var(--theme-success-500);
+  // color: var(--color-base-800);
+  background-color: white;
+  color: black;
 }
 
 img {

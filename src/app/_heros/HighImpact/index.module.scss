@@ -7,9 +7,7 @@
 
 .media {
   position: relative;
-  width: calc(100% + var(--gutter-h));
-  left: calc(var(--gutter-h) / -2);
-  top: calc(var(--gutter-h)*-1);
+  top: -80px;
 
   img {
     pointer-events: none;

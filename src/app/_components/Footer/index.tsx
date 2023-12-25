@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { Footer } from '../../../payload/payload-types'
@@ -34,6 +35,18 @@ export async function Footer() {
               src="white-text.png"
             />
           </picture>
+        </Link>
+        <Link href="#">
+          <Image alt="Discord" src="icons/discord.svg" width={18} height={18} />
+        </Link>
+        <Link href="#">
+          <Image alt="Twitch" src="icons/twitch.svg" width={18} height={18} />
+        </Link>
+        <Link href="#">
+          <Image alt="X" src="icons/x.svg" width={18} height={18} />
+        </Link>
+        <Link href="#">
+          <Image alt="YouTube" src="icons/youtube.svg" width={18} height={18} />
         </Link>
         <nav className={classes.nav}>
           {/* <ThemeSelector />
