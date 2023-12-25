@@ -7,17 +7,14 @@
 
 .media {
   position: relative;
-  top: -80px;
+  top: -5rem;
 
   img {
     pointer-events: none;
   }
 
   @include mid-break {
-    left: 0;
     top: 0;
-    margin-left: calc(var(--gutter-h) * -1);
-    width: calc(100% + var(--gutter-h) * 2);
   }
 }
 
@@ -58,8 +55,7 @@
   }
 
   @include mid-break {
-    padding: 0 4rem;
-    bottom: 0;
+    bottom: -2rem;
   }
 }
 

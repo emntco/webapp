@@ -36,16 +36,16 @@ export async function Footer() {
             />
           </picture>
         </Link>
-        <Link href="#">
+        <Link href="http://discord.emnt.co">
           <Image alt="Discord" src="icons/discord.svg" width={18} height={18} />
         </Link>
-        <Link href="#">
+        <Link href="https://twitch.tv/emntco">
           <Image alt="Twitch" src="icons/twitch.svg" width={18} height={18} />
         </Link>
-        <Link href="#">
+        <Link href="https://x.com/emntco">
           <Image alt="X" src="icons/x.svg" width={18} height={18} />
         </Link>
-        <Link href="#">
+        <Link href="https://youtube.com/@emntco">
           <Image alt="YouTube" src="icons/youtube.svg" width={18} height={18} />
         </Link>
         <nav className={classes.nav}>
