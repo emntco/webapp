@@ -21,6 +21,7 @@ export interface Config {
     categories: Category
     users: User
     redirects: Redirect
+    events: Event
     'payload-preferences': PayloadPreference
     'payload-migrations': PayloadMigration
   }
@@ -431,6 +432,19 @@ export interface Redirect {
         }
     url: string
   }
+  updatedAt: string
+  createdAt: string
+}
+export interface Event {
+  id: string
+  title?: string
+  parent?: string | Event
+  breadcrumbs?: {
+    doc?: string | Event
+    url?: string
+    label?: string
+    id?: string
+  }[]
   updatedAt: string
   createdAt: string
 }

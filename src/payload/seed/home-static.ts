@@ -7,8 +7,8 @@ export const staticHome: Page = {
   createdAt: '',
   updatedAt: '',
   meta: {
-    title: 'Payload E-Commerce Template',
-    description: 'An open-source e-commerce store built with Payload and Next.js.',
+    title: 'Stand Tall - EMINENT',
+    description: 'Esports community hosting events and producing media.',
   },
   hero: {
     type: 'lowImpact',
@@ -16,7 +16,7 @@ export const staticHome: Page = {
       {
         children: [
           {
-            text: 'Payload E-commerce Template',
+            text: 'Stand Tall',
           },
         ],
         type: 'h1',
@@ -24,7 +24,7 @@ export const staticHome: Page = {
       {
         children: [
           {
-            text: 'Welcome to your e-commerce store! ',
+            text: 'Welcome to EMINENT',
           },
           {
             text: 'Your database is currently empty.',

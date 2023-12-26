@@ -5,8 +5,8 @@ export const home: Partial<Page> = {
   slug: 'home',
   _status: 'published',
   meta: {
-    title: 'Payload E-Commerce Template',
-    description: 'An open-source e-commerce store built with Payload and Next.js.',
+    title: 'Stand Tall - EMINENT',
+    description: 'Esports community hosting events and producing media.',
     image: '{{PRODUCT1_IMAGE}}',
   },
   hero: {
@@ -15,7 +15,7 @@ export const home: Partial<Page> = {
       {
         children: [
           {
-            text: 'Payload E-Commerce Store',
+            text: 'Stand Tall',
           },
         ],
         type: 'h1',
@@ -23,7 +23,7 @@ export const home: Partial<Page> = {
       {
         children: [
           {
-            text: 'Welcome to your store! ',
+            text: 'Welcome to EMINENT',
           },
           {
             type: 'link',

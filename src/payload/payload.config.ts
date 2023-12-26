@@ -12,6 +12,7 @@ import path from 'path'
 import { buildConfig } from 'payload/config'
 
 import Categories from './collections/Categories'
+import { Events } from './collections/Events'
 import { Media } from './collections/Media'
 import { Orders } from './collections/Orders'
 import { Pages } from './collections/Pages'
@@ -27,7 +28,7 @@ import { priceUpdated } from './stripe/webhooks/priceUpdated'
 import { productUpdated } from './stripe/webhooks/productUpdated'
 
 const generateTitle: GenerateTitle = () => {
-  return 'My Store'
+  return 'EMINENT'
 }
 
 const mockModulePath = path.resolve(__dirname, './emptyModuleMock.js')
@@ -73,7 +74,7 @@ export default buildConfig({
   }),
   // database-adapter-config-end
   serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL,
-  collections: [Pages, Products, Orders, Media, Categories, Users],
+  collections: [Pages, Products, Orders, Media, Categories, Users, Events],
   globals: [Settings, Header, Footer],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
