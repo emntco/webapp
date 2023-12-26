@@ -7,7 +7,7 @@ const defaultOpenGraph: Metadata['openGraph'] = {
   description: 'Esports community hosting events and producing media.',
   images: [
     {
-      url: 'https://payloadcms.com/images/og-image.jpg',
+      url: 'https://emnt.co/_next/image?url=https%3A%2F%2Femnt.co%2Fmedia%2Fsl-csgo-splash.png&w=3840&q=75',
     },
   ],
 }
