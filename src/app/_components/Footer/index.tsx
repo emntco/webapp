@@ -24,41 +24,50 @@ export async function Footer() {
 
   const navItems = footer?.navItems || []
 
+  const year = new Date().getFullYear()
+
   return (
     <footer className={classes.footer}>
       <Gutter className={classes.wrap}>
-        <Link href="/">
-          <picture>
-            <img
-              className={classes.logo}
-              alt="White text version of the EMINENT logo."
-              src="white-text.png"
-            />
-          </picture>
-        </Link>
-        <Link href="http://discord.emnt.co">
-          <Image alt="Discord" src="icons/discord.svg" width={18} height={18} />
-        </Link>
-        <Link href="https://twitch.tv/emntco">
-          <Image alt="Twitch" src="icons/twitch.svg" width={18} height={18} />
-        </Link>
-        <Link href="https://x.com/emntco">
-          <Image alt="X" src="icons/x.svg" width={18} height={18} />
-        </Link>
-        <Link href="https://youtube.com/@emntco">
-          <Image alt="YouTube" src="icons/youtube.svg" width={18} height={18} />
-        </Link>
-        <nav className={classes.nav}>
-          {/* <ThemeSelector />
+        <div className={classes.brand}>
+          <Link href="/">
+            <picture>
+              <img
+                className={classes.logo}
+                alt="White text version of the EMINENT logo."
+                src="white-text.png"
+              />
+            </picture>
+          </Link>
+          <div className={classes.socials}>
+            <Link href="http://discord.emnt.co" target="_blank">
+              <Image alt="Discord" src="icons/discord.svg" width={18} height={18} />
+            </Link>
+            <Link href="https://twitch.tv/emntco" target="_blank">
+              <Image alt="Twitch" src="icons/twitch.svg" width={18} height={18} />
+            </Link>
+            <Link href="https://x.com/emntco" target="_blank">
+              <Image alt="X" src="icons/x.svg" width={18} height={18} />
+            </Link>
+            <Link href="https://youtube.com/@emntco" target="_blank">
+              <Image alt="YouTube" src="icons/youtube.svg" width={18} height={18} />
+            </Link>
+          </div>
+        </div>
+        <div className={classes.links}>
+          <span className={classes.copy}>{year} &copy; All rights reserved.</span>
+          <nav className={classes.nav}>
+            {/* <ThemeSelector />
           {navItems.map(({ link }, i) => {
             return <CMSLink key={i} {...link} />
           })} */}
-          {/* <CartLink /> */}
-          {navItems.map(({ link }, i) => {
-            return <CMSLink key={i} {...link} appearance="none" />
-          })}
-          {/* <CartLink /> */}
-        </nav>
+            {/* <CartLink /> */}
+            {navItems.map(({ link }, i) => {
+              return <CMSLink key={i} {...link} appearance="none" />
+            })}
+            {/* <CartLink /> */}
+          </nav>
+        </div>
       </Gutter>
     </footer>
   )
