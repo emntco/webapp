@@ -41,16 +41,7 @@ export default async function Account() {
             type: 'paragraph',
             children: [
               {
-                text: 'This is your account dashboard. Here you can update your account information, view your purchased products, and browse your order history. To manage all users, ',
-              },
-              {
-                type: 'link',
-                url: '/admin/collections/users',
-                children: [
-                  {
-                    text: 'login to the admin dashboard.',
-                  },
-                ],
+                text: 'This is your account dashboard. Here you can update your account information, view your purchased products, and browse your order history.',
               },
             ],
           },
@@ -60,11 +51,6 @@ export default async function Account() {
         <AccountForm />
         <HR />
         <h2>Purchased Products</h2>
-        <p>
-          These are the products you have purchased over time. This provides a way for you to access
-          digital assets or gated content behind a paywall. This is different from your orders,
-          which are directly associated with individual payments.
-        </p>
         <div>
           {user?.purchases?.length || 0 > 0 ? (
             <ul className={classes.purchases}>
@@ -88,10 +74,6 @@ export default async function Account() {
         </div>
         <HR />
         <h2>Orders</h2>
-        <p>
-          These are the orders you have placed over time. Each order is associated with an payment
-          intent. As you order products, they will appear in your "purchased products" list.
-        </p>
         <Button
           className={classes.ordersButton}
           href="/orders"

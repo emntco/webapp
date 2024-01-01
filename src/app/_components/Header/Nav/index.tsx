@@ -32,13 +32,13 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       {/* <CartLink /> */}
       {user && (
         <Link href="/account">
-          <Image src="icons/user.svg" alt="User icon" width={18} height={18} />
+          <Image src="/icons/user.svg" alt="User icon" width={18} height={18} />
         </Link>
       )}
       {!user && (
         <React.Fragment>
           <Link href="/login">
-            <Image src="icons/user.svg" alt="User icon" width={18} height={18} />
+            <Image src="/icons/user.svg" alt="User icon" width={18} height={18} />
           </Link>
         </React.Fragment>
       )}

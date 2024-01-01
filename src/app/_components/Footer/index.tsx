@@ -35,22 +35,22 @@ export async function Footer() {
               <img
                 className={classes.logo}
                 alt="White text version of the EMINENT logo."
-                src="white-text.png"
+                src="/white-text.png"
               />
             </picture>
           </Link>
           <div className={classes.socials}>
             <Link href="http://discord.emnt.co" target="_blank">
-              <Image alt="Discord" src="icons/discord.svg" width={18} height={18} />
+              <Image alt="Discord" src="/icons/discord.svg" width={18} height={18} />
             </Link>
             <Link href="https://twitch.tv/emntco" target="_blank">
-              <Image alt="Twitch" src="icons/twitch.svg" width={18} height={18} />
+              <Image alt="Twitch" src="/icons/twitch.svg" width={18} height={18} />
             </Link>
             <Link href="https://x.com/emntco" target="_blank">
-              <Image alt="X" src="icons/x.svg" width={18} height={18} />
+              <Image alt="X" src="/icons/x.svg" width={18} height={18} />
             </Link>
             <Link href="https://youtube.com/@emntco" target="_blank">
-              <Image alt="YouTube" src="icons/youtube.svg" width={18} height={18} />
+              <Image alt="YouTube" src="/icons/youtube.svg" width={18} height={18} />
             </Link>
           </div>
         </div>

@@ -37,7 +37,7 @@ export async function Header() {
             <img
               className={classes.logo}
               alt="White text version of the EMINENT logo"
-              src="white-text.png"
+              src="/white-text.png"
             />
           </Link>
           <HeaderNav header={header} />

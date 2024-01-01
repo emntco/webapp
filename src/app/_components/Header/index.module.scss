@@ -5,7 +5,6 @@
   padding: var(--base) 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgb(0, 0, 0, 0.75) 0);
   overflow: hidden;
-  width: 100%;
   z-index: 1;
 
   @include mid-break {
